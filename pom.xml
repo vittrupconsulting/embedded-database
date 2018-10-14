@@ -12,6 +12,13 @@
 
     <url>https://github.com/vittrupconsulting/embedded-database</url>
 
+    <properties>
+        <version.h2>1.4.194</version.h2>
+        <version.hsqldb>2.3.4</version.hsqldb>
+        <version.derby>10.13.1.1</version.derby>
+        <version.sqlite>3.16.1</version.sqlite>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -22,28 +29,28 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.194</version>
+            <version>${version.h2}</version>
             <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
-            <version>2.3.4</version>
+            <version>${version.hsqldb}</version>
             <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
-            <version>10.13.1.1</version>
+            <version>${version.derby}</version>
             <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.16.1</version>
+            <version>${version.sqlite}</version>
             <optional>true</optional>
         </dependency>
 
