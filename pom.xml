@@ -4,14 +4,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.corsaircode</groupId>
+    <groupId>org.corsaircode.maven</groupId>
     <artifactId>embedded-database</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>embedded-database</name>
+    <description>Embedded database utils for webapps</description>
 
-    <url>https://github.com/vittrupconsulting/embedded-database</url>
-
+    <url>http://git.corsaircode.org/embedded-database</url>
+    
+    <distributionManagement>
+        <repository>
+            <id>archiva.internal</id>
+            <name>Internal Release Repository</name>
+            <url>http://mvnrepo.corsaircode.org/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>archiva.snapshots</id>
+            <name>Internal Snapshot Repository</name>
+            <url>http://mvnrepo.corsaircode.org/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
     <properties>
         <version.h2>1.4.194</version.h2>
         <version.hsqldb>2.3.4</version.hsqldb>
